@@ -67,8 +67,7 @@ def play_game():
     while computer_score != 0 and sum(computer_cards) < 17:
         computer_cards.append(deal_card())
         computer_score = calculate_cards(computer_cards)
-    print("")
-    print(f"Your final hand: {user_cards}, final score: {sum(user_cards)}")
+    print(f"\nYour final hand: {user_cards}, final score: {sum(user_cards)}")
     print(f"Computer's final hand: {computer_cards}, final score: {sum(computer_cards)}")
     print(compareHands(user_score, computer_score))
   
